@@ -1,0 +1,133 @@
+/* Created by Abdurezak Awil Farah */
+
+*{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body {
+	display: flex;
+	height: 96vh;
+	align-items: flex-end;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	background-color: black;
+	color: white;
+}
+
+.container{
+	position: relative;
+	display: flex;
+	width: 100%; height: 86vh;
+	border: 1px solid black;
+   	align-items: flex-end;
+
+}
+
+#resultBox{
+	position: absolute;
+	display: flex;
+	top: 0;
+	width: 100%; 	height: 15.5%;
+	justify-content: center;
+
+
+
+}
+
+#result{
+	position: relative;
+	display: flex;
+	width: 95%;
+	font-size: 5.75rem;
+	font-weight: 300;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 1.56rem;
+
+}
+
+
+.buttons-grid{
+	position: relative;
+	display: grid;
+	width: 100%; 	height: 83%;
+	/*border: 1px solid blue;*/
+	align-items: flex-end;
+	justify-items: center;
+	grid-template-columns: repeat(4,25%);
+	grid-template-rows: repeat(5, 20%);
+
+}
+
+.buttons{
+	position: relative;
+	display: flex;
+	width: 5.2rem; height: 5.2rem;
+	/*border: 1px solid red;*/
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.6rem;
+	font-weight: 430;
+}
+
+#zero {
+	grid-column: span 2;
+	width: 11.5rem;
+	border-radius: 3.125rem;
+
+}
+#zero>div{
+	 position: absolute;
+	 left: 2.21rem;
+}
+#dot{
+	position: relative;
+	font-size: 2.5rem;
+}
+.numbers{
+	background-color: #343434;
+	font-size: 2.1rem;
+
+}
+
+
+.operators{
+	background-color: #ff9f1a;
+	font-size: 2.3rem;
+	font-weight: 450;
+}
+
+.ups{
+	background-color: #adada8;
+	color: black;
+}
+
+#mp > span:first-child {
+	position: absolute;
+	top: 33%; left: 33%;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+
+#mp > span:nth-child(2) {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+
+#mp > span:last-child {
+	position: absolute;
+	top: 46.5%; left: 53%;
+	font-size: 0.9rem;
+	font-weight: bold;
+
+
+}
